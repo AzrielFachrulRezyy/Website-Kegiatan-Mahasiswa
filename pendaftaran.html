@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pendaftaran UKM - UNIVERSITAS Pamulang</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo-unpam-300x291.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
+        <a href="index.html" class="navbar-brand ps-5 me-0">
+            <img src="img/logo-unpam-300x291.png" alt="logo" style="width: 50px; margin-right: 5px;">
+            <h4 class="text-white m-0">UNIVERSITAS PAMULANG</h4>
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link ">Profile UKM</a>
+                <a href="gallery.html" class="nav-item nav-link">Gallery UKM</a>
+                <a href="pendaftaran.html" class="nav-item nav-link active">Pendaftaran</a>    
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-3 text-white animated slideInRight">Pendaftaran</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb animated slideInRight mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Pendaftaran</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- About Start -->
+            <div class="container">
+                <div class="row g-5 pb-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <p class="fw-medium text-uppercase text-primary mb-2">Form Pendaftaran</p>
+                        <h3 class="display-5 mb-4">Form pendaftaran kegiatan mahasiswa</h3>
+                        <p class="mb-4">Jika ada yang ingin mendaftar silahkan mengisi form disamping dan jika ada yang ingin di tanyakan silahkan hubungin contact di bawah</p>
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle">
+                                        <i class="fa fa-phone-alt text-white"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h6>Call us</h6>
+                                        <span>087812312412</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle">
+                                        <i class="fa fa-envelope text-white"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h6>Mail Us</h6>
+                                        <span>unpamukm@gmail.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-12">
+                                    <h4>Masukkan NIM :</h4>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="nim" placeholder="Your NIM">
+                                        <label for="nim">Your NIM</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <h4>Masukkan Nama :</h4>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="text">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-floating">
+                                        <tr>
+                                            <h4>Jenis Kelamin :</h4>
+                                            <td><input type="radio" name='jenis_kelamin' value='pria' style="margin-right: 5px;"/>Pria
+                                            <input type="radio" name='jenis_kelamin' value='perempuan' style="margin-left: 50px; margin-right:5px;"/>Perempuan</td>
+                                            </tr>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <h4>Masukkan Program Studi :</h4>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="prodi" placeholder="Prodi">
+                                        <label for="Program Studi">Program Studi</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>Pilih Jenis UKM :</h4>
+                                      <div class="col-12">
+                                        <select name="UKM" id="UKM">
+                                            <option value="olahraga" style="margin-right: 3px;">Unit Kegiatan Olahraga</option>
+                                            <option value="alam" style="margin-right: 3px;">Unit Aktivitas Divisi Mahasiswa Pecinta Alam</option>
+                                            <option value="padus" style="margin-right: 3px;">Unit Aktivitas Paduan Suara</option>
+                                            <option value="pramuka" style="margin-right: 3px;">Unit Aktivitas Pramuka</option>
+                                            <option value="masjid" style="margin-right: 3px;">Unit Aktivitas Jamaah Masjid</option>
+                                            <option value="ilf" style="margin-right: 3px;">International Language Forum (ILF)</option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <h4>Pilih Hari Kegiatan :</h4>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-text" style="margin-right: 5px;">                        
+                                        <label for="senin" style="margin-right: 5px;">Senin</label>
+                                      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </div>
+                                    <div class="input-group-text" style="margin-right: 5px;">                        
+                                        <label for="senin" style="margin-right: 5px;">Selasa</label>
+                                      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </div>
+                                    <div class="input-group-text" style="margin-right: 5px;">                        
+                                        <label for="senin" style="margin-right: 5px;">Rabu</label>
+                                      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </div>
+                                    <div class="input-group-text" style="margin-right: 5px;">                        
+                                        <label for="senin" style="margin-right: 5px;">Kamis</label>
+                                      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </div>
+                                    <div class="input-group-text" style="margin-right: 5px;">                        
+                                        <label for="senin" style="margin-right: 5px;">Jumat</label>
+                                      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn btn-dark py-3 px-5" type="submit" style="border-radius: 8px;">Daftar</button>
+                                </div>
+                                    <div class="col-4">
+                                        <button class="btn btn-dark py-3 px-5" type="reset" style="border-radius: 8px;">Batal</button>
+                                    </div>
+                                    
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    <!-- About End -->
+     <!-- Copyright Start -->
+     <div class="container-fluid copyright bg-dark py-4">
+        <div class="container text-center">
+            <p class="mb-2">Copyright &copy; Azriel FachrulRezy - UNIVERSITAS PAMULANG.
+            </p>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
