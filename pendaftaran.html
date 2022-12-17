@@ -33,6 +33,33 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
+<!--Script Js-->
+<script type="text/javascript">
+    function validasi() {
+      var nama = document.getElementById("nama").value;
+      var nim = document.getElementById("nim").value;
+      var ukm = document.getElementById("ukm").value;
+      let hari = [];
+      let checkboxes = document.getElementsByName('hari[]');
+      for (let i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+          hari.push(checkboxes[i].value);
+        }
+      }
+      let jenisKelamin = document.querySelector('input[name="jenisKelamin"]:checked').value;
+      if (nama != "" && nim != "" && ukm != "" && hari != "") {
+        alert('Anda berhasil mendaftar! \nBerikut adalah data yang Anda masukkan : ' +
+          "\n" + 'Nama : ' + nama +
+          "\n" + 'NIM : ' + nim +
+          "\n" + 'Jenis Kelamin : ' + jenisKelamin +
+          "\n" + 'Jenis UKM : ' + ukm +
+          "\n" + 'Hari Kegiatan : ' + hari);
+      } else {
+        alert('Anda harus mengisi data dengan lengkap !');
+      }
+    }
+  </script>
+
 <body>
     <!-- Spinner Start -->
     <div id="spinner"
@@ -94,7 +121,7 @@
                                     </div>
                                     <div class="ms-3">
                                         <h6>Call us</h6>
-                                        <span>087812312412</span>
+                                        <span>(021) 7412566</span>
                                     </div>
                                 </div>
                             </div>
@@ -105,14 +132,16 @@
                                     </div>
                                     <div class="ms-3">
                                         <h6>Mail Us</h6>
-                                        <span>unpamukm@gmail.com</span>
+                                        <span>info@unpam.ac.id</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!--Form Pendaftaran-->
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <form>
+                        <form name="formPendaftaran" action="#" method="post" onSubmit="validasi()">
                             <div class="row g-3">
                                 <div class="col-md-12">
                                     <h4>Masukkan NIM :</h4>
@@ -124,7 +153,7 @@
                                 <div class="col-md-12">
                                     <h4>Masukkan Nama :</h4>
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control" id="nama" placeholder="Your Name">
                                         <label for="text">Your Name</label>
                                     </div>
                                 </div>
@@ -132,8 +161,8 @@
                                     <div class="form-floating">
                                         <tr>
                                             <h4>Jenis Kelamin :</h4>
-                                            <td><input type="radio" name='jenis_kelamin' value='pria' style="margin-right: 5px;"/>Pria
-                                            <input type="radio" name='jenis_kelamin' value='perempuan' style="margin-left: 50px; margin-right:5px;"/>Perempuan</td>
+                                            <td><input type="radio" name='jenisKelamin' value='pria' style="margin-right: 5px;"/>Pria
+                                            <input type="radio" name='jenisKelamin' value='perempuan' style="margin-left: 50px; margin-right:5px;"/>Perempuan</td>
                                             </tr>
                                     </div>
                                 </div>
@@ -147,7 +176,7 @@
                                 <div>
                                     <h4>Pilih Jenis UKM :</h4>
                                       <div class="col-12">
-                                        <select name="UKM" id="UKM">
+                                        <select name="UKM" id="ukm">
                                             <option value="olahraga" style="margin-right: 3px;">Unit Kegiatan Olahraga</option>
                                             <option value="alam" style="margin-right: 3px;">Unit Aktivitas Divisi Mahasiswa Pecinta Alam</option>
                                             <option value="padus" style="margin-right: 3px;">Unit Aktivitas Paduan Suara</option>
@@ -161,23 +190,23 @@
                                 <div class="input-group mb-3">
                                     <div class="input-group-text" style="margin-right: 5px;">                        
                                         <label for="senin" style="margin-right: 5px;">Senin</label>
-                                      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                      <input class="form-check-input mt-0" type="checkbox" name="hari[]" value="senin" aria-label="Checkbox for following text input">
                                     </div>
                                     <div class="input-group-text" style="margin-right: 5px;">                        
                                         <label for="senin" style="margin-right: 5px;">Selasa</label>
-                                      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                      <input class="form-check-input mt-0" type="checkbox" name="hari[]" value="selasa" aria-label="Checkbox for following text input">
                                     </div>
                                     <div class="input-group-text" style="margin-right: 5px;">                        
                                         <label for="senin" style="margin-right: 5px;">Rabu</label>
-                                      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                      <input class="form-check-input mt-0" type="checkbox" name="hari[]" value="rabu" aria-label="Checkbox for following text input">
                                     </div>
                                     <div class="input-group-text" style="margin-right: 5px;">                        
                                         <label for="senin" style="margin-right: 5px;">Kamis</label>
-                                      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                      <input class="form-check-input mt-0" type="checkbox" name="hari[]" value="kamis" aria-label="Checkbox for following text input">
                                     </div>
                                     <div class="input-group-text" style="margin-right: 5px;">                        
                                         <label for="senin" style="margin-right: 5px;">Jumat</label>
-                                      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                      <input class="form-check-input mt-0" type="checkbox" name="hari[]" value="jumat" aria-label="Checkbox for following text input">
                                     </div>
                                 </div>
                                 <div class="col-4">
@@ -193,6 +222,7 @@
                 </div>
             </div>
     <!-- About End -->
+
      <!-- Copyright Start -->
      <div class="container-fluid copyright bg-dark py-4">
         <div class="container text-center">
